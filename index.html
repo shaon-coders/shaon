@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Shaon Sheikh | Full Stack Developer</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Floating Cursor -->
+    <div class="cursor"></div>
+
+    <!-- 1. Navigation Bar -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home" class="nav-logo"><img src="img/logo.png" alt="Logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#certificates" class="nav-link">Certificates</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-socials-mobile">
+                    <a href="https://www.facebook.com/ShaonCoders/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/shaon-coders/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/shaon-coders"><i class="fab fa-github"></i></a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I’m Md Shaon Sheikh</h1>
+                    <h2 class="typewriter"></h2>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                        <a href="cv/shaon.pdf" target="_blank" download class="btn btn-secondary">Download CV</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://www.facebook.com/ShaonCoders/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/shaon-coders/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/shaon-coders" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="glowing-circle">
+                        <span></span>
+                        <span></span>
+                        <div class="image">
+                            <img src="img/link.png" alt="Md Shaon Sheikh">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Animated Blobs -->
+            <div class="blob blob1"></div>
+            <div class="blob blob2"></div>
+            <!-- Particle effects will be handled by JS -->
+            <canvas id="particle-canvas"></canvas>
+        </section>
+
+        <!-- 3. About Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-container">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="img/shaon.png" alt="Md Shaon Sheikh">
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <h3>Computer Science Student & Full Stack Developer</h3>
+                    <p>
+                        I am a passionate and dedicated Full Stack Developer from Bangladesh, currently pursuing a Diploma in Computer Science. With a strong foundation in both frontend and backend technologies, I love building dynamic, responsive, and user-friendly web applications. My goal is to leverage my skills to create innovative solutions that solve real-world problems.
+                    </p>
+                    <div class="about-info-cards">
+                        <div class="info-card">
+                            <i class="fas fa-user"></i>
+                            <p><strong>Age:</strong> 21</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p><strong>Address:</strong> Khulna, Bangladesh</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-envelope"></i>
+                            <p><strong>Email:</strong> mdshaonsheikh546@gmail.com</p>
+                        </div>
+                        <div class="info-card">
+                            <i class="fas fa-phone"></i>
+                            <p><strong>Phone:</strong> + 880 1307-201070</p>
+                        </div>
+                    </div>
+                    <a href="cv/shaon.pdf" target="_blank" class="btn btn-glow">View Resume</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Services Section -->
+        <section id="services" class="services-section">
+            <h2 class="section-title" data-aos="fade-up">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-palette"></i>
+                    <h3>Web Design</h3>
+                    <p>Creating visually stunning and intuitive user interfaces with a focus on user experience.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>Building responsive and interactive client-side applications using modern frameworks.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Development</h3>
+                    <p>Developing robust, scalable, and secure server-side logic and database integrations.</p>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-layer-group"></i>
+                    <h3>Full Stack Projects</h3>
+                    <p>Handling complete project lifecycles, from concept and design to deployment and maintenance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Skills Section -->
+        <section id="skills" class="skills-section">
+            <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">My expertise in modern technologies</p>
+            <div class="skills-container">
+                <!-- Frontend Card -->
+                <div class="skill-card" data-aos="fade-right" data-aos-delay="200">
+                    <h3>Frontend</h3>
+                    <div class="skill" data-progress="90">
+                        <div class="skill-info"><i class="fab fa-html5"></i> <span>HTML5</span></div>
+                        <div class="progress-bar"><div class="progress"></div></div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill" data-progress="80">
+                        <div class="skill-info"><i class="fab fa-css3-alt"></i> <span>CSS3</span></div>
+                        <div class="progress-bar"><div class="progress"></div></div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill" data-progress="30">
+                        <div class="skill-info"><i class="fab fa-js"></i> <span>JavaScript</span></div>
+                        <div class="progress-bar"><div class="progress"></div></div>
+                        <span class="skill-percent">30%</span>
+                    </div>
+                    <div class="skill" data-progress="85">
+                        <div class="skill-info"><i class="fab fa-bootstrap"></i> <span>Bootstrap</span></div>
+                        <div class="progress-bar"><div class="progress"></div></div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                </div>
+                <!-- Backend Card -->
+                <div class="skill-card" data-aos="fade-left" data-aos-delay="300">
+                    <h3>Backend</h3>
+                    <div class="skill" data-progress="70">
+                        <div class="skill-info"><i class="fab fa-python"></i> <span>Python</span></div>
+                        <div class="progress-bar"><div class="progress"></div></div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill" data-progress="90">
+                        <div class="skill-info"><i class="fas fa-server"></i> <span>Django</span></div>
+                        <div class="progress-bar"><div class="progress"></div></div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill" data-progress="70">
+                        <div class="skill-info"><i class="fab fa-php"></i> <span>PHP</span></div>
+                        <div class="progress-bar"><div class="progress"></div></div>
+                        <span class="skill-percent">70%</span>
+                    </div>
+                    <div class="skill" data-progress="40">
+                        <div class="skill-info"><i class="fab fa-java"></i> <span>Java</span></div>
+                        <div class="progress-bar"><div class="progress"></div></div>
+                        <span class="skill-percent">40%</span>
+                    </div>
+                </div>
+            </div>
+            <h3 class="additional-tech-title" data-aos="fade-up">Additional Technologies</h3>
+            <div class="tech-chips" data-aos="fade-up" data-aos-delay="100">
+                <span class="chip">Django REST Framework</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">Git & GitHub</span>
+                <span class="chip">AJAX</span>
+                <span class="chip">Responsive Design</span>
+                <span class="chip">API Development</span>
+                <span class="chip">Database Design</span>
+                <span class="chip">Web Security</span>
+            </div>
+        </section>
+
+        <!-- 6. Experience Section -->
+        <section id="experience" class="experience-section">
+            <h2 class="section-title gradient-text" data-aos="fade-up">Experience & Journey</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">My professional timeline</p>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-year">2024 – Present</div>
+                        <h3 class="timeline-title">Co- Founder </h3>
+                        <p class="timeline-org">TechZ IT — <a href="https://techz.it" style="color:inherit;text-decoration:underline;">techz.it</a></p>
+                        <p class="timeline-desc">Building custom web applications focusing on Django backend and modern frontend technologies.</p>
+                        <p style="margin:10px 0 0 0;color:#9fb0c8;font-size:14px">Contact: <a href="mailto:shaon@techz.it" style="color:inherit;text-decoration:underline;">shaon@techz.it</a></p>
+                    </div>
+                </div>
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-year">2023 – 2024</div>
+                        <h3 class="timeline-title">Web Developer Intern</h3>
+                        <p class="timeline-org">Local Tech Startup</p>
+                        <p class="timeline-desc">Developed responsive interfaces and integrated REST APIs for e-commerce platforms.</p>
+                    </div>
+                </div>
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-year">2022 – 2023</div>
+                        <h3 class="timeline-title">Junior Frontend Developer</h3>
+                        <p class="timeline-org">College Projects</p>
+                        <p class="timeline-desc">Built multiple college projects using HTML, CSS, JavaScript, and Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Education Section -->
+        <section id="education" class="education-section">
+            <h2 class="section-title" data-aos="fade-up">Education & Learning</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">My academic background</p>
+            <div class="education-container" data-aos="fade-up" data-aos-delay="200">
+                <!-- Diploma Card -->
+                <div class="education-card">
+                    <div class="education-content">
+                        <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3>Diploma in Computer Science</h3>
+                        <p class="institute">Mangrove Institute of Science and Technology</p>
+                        <p class="duration">2021 – 2025</p>
+                        <p class="description">Comprehensive program covering software development, database management, web technologies, and computer fundamentals.</p>
+                    </div>
+                </div>
+                <!-- SSC Card -->
+                <div class="education-card">
+                    <div class="education-content">
+                        <div class="education-icon"><i class="fas fa-school"></i></div>
+                        <h3>Secondary School Certificate</h3>
+                        <p class="institute">Local High School</p>
+                        <p class="duration">2019 – 2021</p>
+                        <p class="description">Completed secondary education with focus on science stream, building strong foundation in mathematics and logical thinking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+            <div class="projects-grid">
+                 <!-- Project 1 -->
+                <div class="project-card" data-aos="zoom-in" 
+                     data-description="A full-stack e-commerce site with user authentication, product management, and payment gateway integration." 
+                     data-tags="Django,React,MySQL"
+                     data-img-src="img/p1 (4).png">
+                    <div class="project-image">
+                        <img src="img/p1 (4).png" alt="E-commerce Platform">
+                        <div class="project-hover-overlay">
+                            <span class="view-details-btn">View More Details</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <div class="project-links-preview">
+                            <div class="project-links">
+                                <a href="https://ecommerce.nanovisionltd.com/" target="_blank" class="btn-icon"><i class="fas fa-link"></i> Live Demo</a>
+                                <a href="#" class="btn-icon"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="100"
+                     data-description="A personal portfolio website built with modern frontend technologies and animations."
+                     data-tags="HTML,CSS,JS"
+                     data-img-src="img/p2.png">
+                    <div class="project-image">
+                        <img src="img/p2.png" alt="Portfolio Website">
+                        <div class="project-hover-overlay">
+                            <span class="view-details-btn">View More Details</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <div class="project-links-preview">
+                            <div class="project-links">
+                                <a href="https://socialfrontend.nanovisionltd.com/" target="_blank" class="btn-icon"><i class="fas fa-link"></i> Live Demo</a>
+                                <a href="#" class="btn-icon"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="200"
+                    data-description="A farm management web application for tracking crops, livestock, expenses, and sales with an interactive dashboard and database-driven reports using PHP and MySQL."
+                    data-tags="HTML,CSS,Bootstrap,JavaScript,AJAX,PHP,MySQL"
+                     data-img-src="img/p3.png">
+                    <div class="project-image">
+                        <img src="img/p3.png" alt="Task Management App">
+                        <div class="project-hover-overlay">
+                            <span class="view-details-btn">View More Details</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Agro Farm Management System</h3>
+                        <div class="project-links-preview">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="btn-icon"><i class="fas fa-link"></i> Live Demo</a>
+                                <a href="#" class="btn-icon"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="300"
+                    data-description="An e-commerce service platform that allows users to browse products, manage carts, and place orders with real-time updates and secure data handling using MySQL."
+                    data-tags="HTML,CSS,Bootstrap,JavaScript,AJAX,PHP,MySQL"
+                     data-img-src="img/p4.png">
+                    <div class="project-image">
+                        <img src="img/p4.png" alt="Blog Platform">
+                        <div class="project-hover-overlay">
+                            <span class="view-details-btn">View More Details</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BD Fast Service</h3>
+                        <div class="project-links-preview">
+                            <div class="project-links">
+                                <a href="https://bdfastservice.xyz/" target="_blank" class="btn-icon"><i class="fas fa-link"></i> Live Demo</a>
+                                <a href="#" class="btn-icon"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="400"
+                    data-description="An online learning platform with course management, student dashboards, and interactive lessons built with a responsive interface and dynamic content handling."
+                    data-tags="HTML,CSS,Bootstrap,JavaScript,AJAX,PHP"
+                     data-img-src="img/p5.png">
+                    <div class="project-image">
+                        <img src="img/p5.png" alt="Weather App">
+                        <div class="project-hover-overlay">
+                            <span class="view-details-btn">View More Details</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Educational Learning Platform</h3>
+                        <div class="project-links-preview">
+                            <div class="project-links">
+                                <a href="https://www.eduawayglobal.com/" target="_blank" class="btn-icon"><i class="fas fa-link"></i> Live Demo</a>
+                                <a href="#" class="btn-icon"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="500"
+                    data-description="A web-based platform for managing blood donations, donor records, and requests using interactive UI, AJAX-powered search, and secure PHP backend integration."
+                    data-tags="HTML,CSS,Bootstrap,JavaScript,AJAX,PHP"
+                     data-img-src="img/p6.jpg">
+                    <div class="project-image">
+                        <img src="img/p6.jpg" alt="Chat Application">
+                        <div class="project-hover-overlay">
+                            <span class="view-details-btn">View More Details</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Online Blood Bank</h3>
+                        <div class="project-links-preview">
+                            <div class="project-links">
+                                <a href="#" class="btn-icon"><i class="fas fa-link"></i> Live Demo</a>
+                                <a href="#" class="btn-icon"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 7 -->
+                <div class="project-card" data-aos="zoom-in" data-aos-delay="500"
+                    data-description="A modern fashion e-commerce website for winter clothing, featuring product categories, responsive design, and smooth user experience for online shopping."
+                    data-tags="HTML,CSS,JavaScript,Bootstrap"
+                     data-img-src="img/p7.png">
+                    <div class="project-image">
+                        <img src="img/p7.png" alt="Chat Application">
+                        <div class="project-hover-overlay">
+                            <span class="view-details-btn">View More Details</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">WinterStyle E-Commerce Platform</h3>
+                        <div class="project-links-preview">
+                            <div class="project-links">
+                                <a href="https://stepneywintercloth.shop/" target="_blank" class="btn-icon"><i class="fas fa-link"></i> Live Demo</a>
+                                <a href="#" class="btn-icon"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Certificates Section -->
+        <section id="certificates" class="certificates-section">
+            <h2 class="section-title" data-aos="fade-up">Certificates</h2>
+            <div class="certificate-carousel" data-aos="fade-up">
+                <div class="carousel-track">
+                     <!-- Duplicate items for seamless loop -->
+                    <div class="certificate-item"><img src="sir/s1.jpg" alt="Certificate 1"></div>
+                    <div class="certificate-item"><img src="sir/s2.jpg" alt="Certificate 1"></div>
+                    <div class="certificate-item"><img src="sir/s3.jpg" alt="Certificate 1"></div>
+                    <div class="certificate-item"><img src="sir/s4.jpg" alt="Certificate 1"></div>
+                    <div class="certificate-item"><img src="sir/s5.jpg" alt="Certificate 1"></div>
+                    <div class="certificate-item"><img src="sir/s6.jpg" alt="Certificate 1"></div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-form" data-aos="fade-right">
+                    <form id="contact-form">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <p class="form-message"></p>
+                </div>
+                <div class="contact-info" data-aos="fade-left">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Khulna, Bangladesh</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>
+                        <a href="mailto:mdshaonsheikh546@gmail.com" target="_blank">mdshaonsheikh546@gmail.com</a><br>
+                        <a href="mailto:shaon@techz.it">shaon@techz.it</a>
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+880 1307-201070</p>
+                            <p>+880 1581-292220</p>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ShaonCoders/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/shaon-coders/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/shaon-coders" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://wa.me/01307201070" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. Hire Me Section -->
+        <section class="hire-me-section">
+            <div class="spotlight-bg"></div>
+            <h2 data-aos="zoom-in">Interested in working with me?</h2>
+            <a href="#contact" class="btn btn-hire" data-aos="zoom-in" data-aos-delay="200">Hire Me Now</a>
+        </section>
+
+    </main>
+
+    <!-- 12. Footer -->
+    <footer class="footer">
+        <div class="footer-social-icons">
+            <a href="https://www.facebook.com/ShaonCoders/" target="_blank" data-aos="fade-up" data-aos-delay="100"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/shaon-coders/" target="_blank" data-aos="fade-up" data-aos-delay="200"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/shaon-coders" target="_blank" data-aos="fade-up" data-aos-delay="300"><i class="fab fa-github"></i></a>
+            <a href="https://wa.me/01307201070" target="_blank" data-aos="fade-up" data-aos-delay="400"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 Md Shaon Sheikh. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="project-modal-container">
+        <div class="project-modal-content">
+            <span class="close-modal-btn">&times;</span>
+            <img id="modal-img" src="" alt="Project Image">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <div class="modal-tech-section">
+                <h4>Technologies Used:</h4>
+                <div id="modal-tags" class="project-tags">
+                    <!-- Tags will be injected by JS -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scroll-to-top button -->
+    <a href="#home" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- AOS (Animate on Scroll) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
